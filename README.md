@@ -14,3 +14,5 @@ npm start
 ## Built with
 
 - [React](https://reactjs.org/)
+- [React-router-dom](https://reactrouter.com/)
+- [React-icons](https://react-icons.github.io/react-icons/)

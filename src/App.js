@@ -1,9 +1,29 @@
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+import Home from './pages/Home'
+import Products from './pages/Products'
+import Product from './pages/Product'
+import Error from './pages/Error'
 
 function App() {
   return (
-    <div>
-      dupa
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path='/'>
+          <Home />
+        </Route>
+        <Route exact path='/products'>
+          <Products />
+        </Route>
+        <Route path='/products/:id'>
+          <Product />
+        </Route>
+        <Route path='*'>
+          <Error />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
