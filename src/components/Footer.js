@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
@@ -11,36 +12,36 @@ const Footer = () => {
             <div className="footer-container">
                <ul className="policy-links">
                   <li>
-                     <a className='social-link' href="/">
+                     <Link to='#' className='social-link'>
                         REFUND POLICY
-                     </a>
+                     </Link>
                   </li>
                   <li>
-                     <a className='social-link' href="/">
+                     <Link to='#' className='social-link'>
                         PRIVACY POLICY
-                     </a>
+                     </Link>
                   </li>
                   <li>
-                     <a className='social-link' href="/">
+                     <Link to='#' className='social-link'>
                      SHIPPING POLICY
-                     </a>
+                     </Link>
                   </li>
                </ul>
                <ul className="social-links">
                   <li>
-                     <a className='social-link' href="/">
+                     <Link to='#' className='social-link'>
                         <FaTwitter />
-                     </a>
+                     </Link>
                   </li>
                   <li>
-                     <a className='social-link' href="/">
+                     <Link to='#' className='social-link'>
                      <FaInstagram />
-                     </a>
+                     </Link>
                   </li>
                   <li>
-                     <a className='social-link' href="/">
+                     <Link to='#' className='social-link'>
                      <FaFacebook />
-                     </a>
+                     </Link>
                   </li>
                </ul>
             </div>

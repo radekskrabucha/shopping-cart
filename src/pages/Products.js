@@ -9,11 +9,13 @@ const Products = () => {
    return (
       <Layout>
          <h2 className='title'>All products</h2>
-         <section className='products-section'>
+         <div className="max-width">
+            <section className='products-section'>
                {products.map((item) => {
                   return <ProductCard key={item.id} {...item}/>
                })}
             </section>
+         </div>
       </Layout>
    )
 }

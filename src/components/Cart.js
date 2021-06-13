@@ -9,7 +9,7 @@ const Cart = () => {
    const {state: {cart, total}, toggleCart, clearCart} = useGlobalContext()
 
    const alertCheckout = () => {
-      alert('Actualy this shop is just a demo. You\'re not allowed to buy anything here, but maybe you would like to hire me?🤔')
+      alert('Actualy this shop is just a demo. You can\'t buy anything here, but maybe you would like to hire me?🤔')
    }
 
    return (
@@ -24,12 +24,15 @@ const Cart = () => {
                cart.length>0 
                ?
                   <section className='cart-items'>
+                     <h2 className='title'>
+                        Your cart
+                     </h2>
                   {cart.map((item) => <CartItem key={item.id} {...item} />)}
-                     <p>Total: ${total}</p>
                      <button className='cart-item-remove' onClick={() => clearCart()}>Clear cart</button>
                      <Link onClick={toggleCart} to='/products' className='btn'>
                         add more products
                      </Link>
+                     <p className='total'><strong>Total: </strong>${total}</p>
                      <button onClick={alertCheckout} to='/products' className='btn'>
                         Checkout
                      </button>
