@@ -1,6 +1,6 @@
 # Shopping cart
 
-<!-- [Live Demo](https://radek1313.github.io/shopping-cart/) :point_left: -->
+[Live Demo](https://radek1313.github.io/shopping-cart/) :point_left:
 
 ## Getting started
 
